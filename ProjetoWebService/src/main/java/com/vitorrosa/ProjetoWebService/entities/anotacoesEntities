@@ -1,0 +1,60 @@
+Serializable
+- uma interface usada para indicar que objetos dessa classe podem ser convertidos em uma sequência de bytes, ou seja,
+podem ser serializados;
+- pra que serve: - persistência de dados: salvar objetos em arquivos ou banco de dados;
+                 - envio via rede: transmitir objetos entre aplicações (ex: um WebService ou socket);
+                 - cache: guardar o estado de um objeto em memória temporária;
+- no caso para esse projeto web, pode ser útil para serializar o objeto User em JSON para uma API REST e também para
+salvar a sessão de um usuário;
+
+equals
+- define o critério de igualdade entre dois objetos;
+- na função, dois objetos User são considerados iguais se tiverem o mesmo id, o que faz sentido para entidades com
+identificadores únicos (como um ID de banco de dados);
+
+hashCode
+- retorna um número inteiro (hash) representando o objeto;
+- é usado por coleções baseadas em hash, como HashMap e HashSet;
+- regra de ouro: se dois objetos são iguais (equals()), eles devem ter o mesmo hashCode();
+- na função, garante que objetos com mesmo id terão o mesmo hashCode, garantindo o comportamento correto em coleções;
+
+Ex para equals e hashCode:
+
+User u1 = new User(1L, "João", "joao@email.com", "123", "senha");
+User u2 = new User(1L, "Maria", "maria@email.com", "456", "senha");
+
+System.out.println(u1.equals(u2)); // true, porque o id é o mesmo
+
+@Entity
+- essa anotação indica que essa classe é uma entidade JPA, ou seja, ela será mapeada para uma tabela no banco de dados;
+- o JPA/Spring Boot vai criar uma tabela no banco de dados, onde cada instância da classe Aluno será uma linha nessa
+tabela
+
+@OneToMany
+- indica que existe uma relação de um para muitos: um Aluno pode ter muitas Matriculas;
+
+@ManyToOne
+- parecido com o de cima, só muda a ordem: uma disciplina só pode ter um Professor, mas um professor pode ter n
+disciplinas;
+
+@ManyToMany
+- n para n, um professor pode dar várias disciplinas e uma disciplina pode ser ministrada por vários professores;
+
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+- essa estratégia de herança cria uma tabela separada para cada subclasse (Aluno, Professor, etc) e não uma única tabela
+com todos os campos misturados;
+- ex: vai existir uma tabela aluno, com todos os campos de Usuario + os campos de Aluno;
+- obs: a superclasse (Usuario) não gera uma tabela, porque ela é abstrata e marcada como @Entity;
+
+@Id
+- serve para marcar o campo que será a chave primária da tabela no banco de dados;
+- ou seja, é o campo único que identifica cada registro;
+- obrigatório em qualquer entidade JPA;
+
+@GeneratedValue
+- normalmente acompanha o @Id
+- serve para indicar que o valor do campo @Id será gerado automaticamente, e você não precisa setar manualmente ao
+salvar um novo registro
+- pode ser usado de 4 formas: - GenerationType.IDENTITY -> banco de dados gera o ID, auto incrementa, o mais simples e
+                                eficiente de usar;
+                              - GenerationType.AUTO -> JPA escolhe a melhor estratégia com base no banco de dados;

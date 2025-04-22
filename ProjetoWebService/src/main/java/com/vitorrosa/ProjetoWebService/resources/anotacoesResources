@@ -1,0 +1,16 @@
+@RestController
+- essa anotação transforma a sua classe Java comum em um Controller REST, que vai tratar requisições HTTP (como GET,
+POST, PUT, DELETE, etc);
+- combinação das anotações @Controller e @ResponseBody
+- isso significa que: - ela recebe as requisições HTTP do cliente;
+                      - e os métodos dela respondem diretamente com dados, geralmente em JSON;
+
+@RequestMapping
+- define o caminho base da URL (ou de um método), ou seja, qual rota aquele controller ou método vai responder;
+
+ResponseEntity
+- tipo o coringa da resposta HTTP no Spring;
+- ele te dá controle total sobre o que a API vai devolver;
+- você pode: - retornar o status HTTP (200 OK, 201 Created, 404 Not Found, etc);
+             - personalizar o corpo da resposta (JSON, String, objeto, etc);
+             - adicionar headers personalizados;
