@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="effafe13-d60f-42a7-88c0-486580775335" name="Changes" comment="" />
+    <list default="true" id="effafe13-d60f-42a7-88c0-486580775335" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/config/anotacoesConfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/entities/anotacoesEntities" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/resources/anotacoesResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/resources/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoWebService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,18 +30,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "vitorrosa0"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vitorrosa0&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/vitorrosa0/ProjetoWebServiceJava.git",
-    "accountId": "28b9febd-6798-4cdc-b69c-4f5d15793b3c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vitorrosa0/ProjetoWebServiceJava.git&quot;,
+    &quot;accountId&quot;: &quot;28b9febd-6798-4cdc-b69c-4f5d15793b3c&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -41,9 +49,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2w3rPpTLIb2IHLteID3oc0CO28O" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,13 +64,34 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.ProjetoWebServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vitor/OneDrive/Documentos/Java/ProjetoWebServiceJava"
+    "last_opened_file_path": "C:/Users/vitor/OneDrive/Documentos/Backend - 202501/Professor-main/aulas-vitorrosa0/03 - UniAcademy"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="ProjetoWebServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vitorrosa.ProjetoWebService.ProjetoWebServiceApplication" />
+      <module name="ProjetoWebService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vitorrosa.ProjetoWebService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProjetoWebServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
