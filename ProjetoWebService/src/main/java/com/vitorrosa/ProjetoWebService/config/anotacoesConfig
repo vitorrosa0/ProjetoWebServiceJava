@@ -1,7 +1,0 @@
-@Configuration
-- marca a classe como uma classe de configuração do Spring;
-- ela indica que essa classe pode contem métodos que produzem beans, ou alguma lógica que o Spring deve rodar ao iniciar
- a aplicação;
-- quando usar: - para criar beans personalizados;
-               - para preparar dados para testes;
-               - para definir regars de segurança, CORS, etc;
