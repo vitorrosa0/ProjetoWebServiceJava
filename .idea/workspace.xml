@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="effafe13-d60f-42a7-88c0-486580775335" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/config/anotacoesConfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/entities/anotacoesEntities" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/resources/anotacoesResources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/entities/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/resources/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetoWebService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetoWebService/src/main/java/com/vitorrosa/ProjetoWebService/entities/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
