@@ -1,6 +1,7 @@
 package com.vitorrosa.ProjetoWebService.config;
 
 import com.vitorrosa.ProjetoWebService.entities.*;
+import com.vitorrosa.ProjetoWebService.entities.enums.OrderStatus;
 import com.vitorrosa.ProjetoWebService.repositories.CategoryRepository;
 import com.vitorrosa.ProjetoWebService.repositories.OrderRepository;
 import com.vitorrosa.ProjetoWebService.repositories.ProductRepository;

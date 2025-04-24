@@ -1,7 +1,7 @@
 package com.vitorrosa.ProjetoWebService.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.vitorrosa.ProjetoWebService.entities.enums.OrderStatus;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -28,7 +28,7 @@ public class Order implements Serializable {
     public Order() {
     }
 
-    public Order(Long id, Instant moment,OrderStatus orderStatus, User client) {
+    public Order(Long id, Instant moment, OrderStatus orderStatus, User client) {
         this.id = id;
         this.moment = moment;
         setOrderStatus(orderStatus);

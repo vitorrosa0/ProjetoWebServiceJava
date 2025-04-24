@@ -1,4 +1,4 @@
-package com.vitorrosa.ProjetoWebService.entities;
+package com.vitorrosa.ProjetoWebService.entities.enums;
 
 public enum OrderStatus {
 
