@@ -1,5 +1,6 @@
 package com.vitorrosa.ProjetoWebService.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.HashSet;
@@ -15,6 +16,8 @@ public class Category {
     private Long id;
     private String name;
 
+    @JsonIgnore
+    @ManyToMany(mappedBy = "categories")
     private Set<Product> products = new HashSet<>();
 
     public Category() {
