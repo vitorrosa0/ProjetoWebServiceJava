@@ -2,6 +2,7 @@ package com.vitorrosa.ProjetoWebService.services;
 
 import com.vitorrosa.ProjetoWebService.entities.User;
 import com.vitorrosa.ProjetoWebService.repositories.UserRepository;
+import com.vitorrosa.ProjetoWebService.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class UserService {
 
     public User findById(Long id){
         Optional<User> obj = userRepository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
     public User insert(User obj){
